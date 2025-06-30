@@ -1,0 +1,102 @@
+Standard Concepts
+
+Built-In Functions
+
+print(s)
+
+len(s)
+
+range(start, stop, step)
+
+sum(x)
+sum([2,3,4,5]) = 14
+
+min(x)
+
+max(x)
+
+List Methods and Syntax
+
+list.append(item) - adds an item to the end of the list
+
+list.sort() - sorts in ascending order
+
+String Methods and Syntax
+
+s.lower() 
+
+s.split(seperator)
+
+s.join(x)
+
+s.strip(characters)
+
+
+Comparing Strings and Lists
+Python strings and lists function similarly in many ways, but there are also some major differences between the two data types. 
+Below is a list of the key similarities and differences between strings and lists.
+
+Similarities
+
+Ordered sequences: Both strings and lists are ordered sequences of data.
+Indexed by Integers: Both strings and lists can be indexed using integers (e.g. lst[0] or s[0]).
+Sliceable: Both strings and lists can be sliced to access a subsection of the string/list (e.g. lst[1:3] or s[1:3]).
+Iterable: Both strings and lists are iterable meaning we can loop over them using a for loop.
+Length: We can use the len() function to get the length of either a string or list
+
+Differences
+
+Content Type: Both strings and lists are ordered sequences of data, but strings are more limited in the type of data they can contain.
+Strings are an ordered sequence of character elements.
+Lists are an ordered sequence of elements that can be of any type, including integers, strings, and other lists.
+
+Mutability:
+Strings are immutable, meaning they are not changeable. To update a string, we must create a new string.
+
+s = 'Try'
+s[0] = 'C' # Results in TypeError: 'str' object does not support item assignment
+
+Lists are mutable. We can update the content of a list without creating a new list.
+
+lst = ['T', 'r', 'y']
+lst[0] = 'C'
+print(lst) # Prints ['C', 'r', 'y'] 
+
+
+Advanced Concepts
+
+Built-in Functions
+Enumerate
+enumerate(x) takes an iterable such as a list, dictionary, or string, and adds a counter to the function. It is often used to loop over the indices and values of an iterable simultaneously.
+
+Accepts two parameters:
+x: an iterable object such as a list, dictionary, or string. This is a required parameter.
+
+
+List Comprehensions
+result_list = [expression for element in lst] evaluates an expression on each element in a list and stores the result of each evaluation in result_list. Try It
+
+List comprehensions are a shorthand syntax for creating a new list using values of an existing list.
+
+For example, say you want to double each value in a list. With a traditional for loop, you would to:
+
+Initialize a new list to hold the list
+Initialize a for loop
+Double each element and append it
+nums = [1, 2, 3, 4, 5]
+doubled = []
+
+for num in nums:
+    doubled.append(num * 2)
+
+print(doubled) # Output: [2, 4, 6, 8, 10]
+A list comprehension reduces the above three steps to a single line of code.
+
+nums = [1, 2, 3, 4, 5]
+doubled = [value * 2 for value in nums]
+print(doubled) # Output: [2, 4, 6, 8, 10]
+
+
+
+
+
