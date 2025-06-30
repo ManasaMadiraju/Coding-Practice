@@ -96,6 +96,30 @@ nums = [1, 2, 3, 4, 5]
 doubled = [value * 2 for value in nums]
 print(doubled) # Output: [2, 4, 6, 8, 10]
 
+TWO POINTER TECHNIQUE
+
+Opposite Direction Pointers (Ex: Reverse the integer list)
+
+left_pointer = 0
+right_pointer = len(word) - 1
+while left_pointer < right_pointer:
+    pass
+    left_pointer += 1
+    right_pointer -= 1
+
+
+Same Direction Pointers (Ex: Merge two sorted lists)
+
+nums1_pointer = 0
+    nums2_pointer = 0
+
+    while nums1_pointer < len(nums1) and nums2_pointer < len(nums2):
+        # <if conditional>
+            # <operation>
+            nums1_pointer += 1
+        else:
+            # <operation>
+            nums2_pointer += 1
 
 
 
